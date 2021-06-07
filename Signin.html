@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+            /* Internal CSS design for page. */
+            body{
+                margin: 0;
+                font-family: inherit;
+                background-color: rgb(21, 197, 168);
+            }
+            /* Placeholder design */
+            ::placeholder{
+                color:black;
+            }
+            /* Form Designing in css */
+            form{
+                float: left;
+                padding-top: 1%;
+                padding-left: 12%;
+            }
+            /* Design input type text format. */
+            input[type=text]{
+                block-size: 35px;
+                width: 45%;
+                padding: 18px 20px;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 2%;
+                background-color: rgb(184, 173, 173);
+                color: black;
+                
+            }
+            /* Design input type email format. */
+            input[type=email]{
+                block-size: 35px;
+                width: 91%;
+                padding: 18px 20px;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 2%;
+                background-color: rgb(184, 173, 173);
+                color: black;
+            
+            }
+            /* Design input type password format. */
+            input[type=password]{
+                block-size: 35px;
+                width: 45%;
+                padding: 18px 20px;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                background-color: rgb(184, 173, 173);
+                color: black;
+            }
+            /* Design input type number format. */
+            input[type=number]{
+                block-size: 35px;
+                width: 91%;
+                padding: 18px 20px;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 2%;
+                background-color: rgb(184, 173, 173);
+                color: black;
+            
+            }
+            /* Design input type date format. */
+            input[type=date]{
+                block-size: 35px;
+                width: 45%;
+                padding: 18px 20px;
+                display: inline-block;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 2%;
+                margin-bottom: 5%;
+                background-color: rgb(184, 173, 173);
+                color: black;
+            }
+            /* Design the lables. */
+            label{
+                color: rgb(112, 69, 69);
+                padding-top: 2%;
+            }
+            /* Set and Design logo. */
+            .logo{
+                padding-top: 5%;
+                padding-left: 11%;
+            }
+            /* Design input type submit button. */
+            input[type=submit]{
+                width: 91%;
+                background-color:rgb(226, 128, 128);
+                color: white;
+                padding: 18px 20px;
+                border: 1px solid;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            /* Design image class. */
+            .image{
+                float: right;
+                margin-right: 5%;
+                margin-top: 2%;
+            }
+            /* Design paragraph. */
+            p{
+                float: right;
+                margin-right: 12%;
+                color: rgb(94, 63, 63);
+
+            }
+            /* Design input type button for about and contact flie.*/
+            input[type=button]{
+                
+                background-color:rgb(226, 128, 128);
+                color: white;
+                padding: 10px 40px;
+                border: 1px solid;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+                
+            }
+            .contact{
+                float: right;
+                margin-top: -40%;
+                margin-right: 14%;
+                width: 15%;
+                
+            }
+            .about{
+                float: right;
+                margin-top: -40%;
+                margin-right: 7%;
+            }
+            
+        </style>
+    </head>
+
+<!-- Start body implemantation. -->
+<body>
+<!-- Insert logo in a html page.    -->
+    <div class="logo">
+        <img src="logo.png" height="10%" width="30%">
+    </div>
+<!-- Inserting form attributes. -->
+    <form>
+        <h1>
+            Create an account
+        </h1>
+        <h3>
+            <i>It's quick and easy.</i>
+        </h3>
+        
+    <!-- Insert input type text, number, email, and password. -->
+        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" required><br>
+        <input type="number" id="num" name="number" placeholder="Enter your mobile number" maxlength="10" required><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email-id" required><br>
+        <input type="password" id="pwd" name="passward" placeholder="Enter password" required><br>
+    <!-- Insert gender attributes using select $ option tags.     -->
+        <!-- <div class="gender">
+        <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+        </div> -->
+    <!-- Inserting Date of Birth using date input type. -->
+        <label>Date of Birth</label><br>
+        <input type="date" id="dob" name="birth"><br>
+        <input type="submit" value="Submit">
+    </form>
+<!-- Closing form attribute. -->
+<!-- Making a class for inserting a image on page. -->
+<div class="image">
+    <img src="chatbook.png" height="50%" width="100%">
+</div>
+<!-- Writing a paragraph. -->
+<p>By clicking Submit, you agree to our <a href> Term</a>, <a href>Data Policy</a>
+    and <br><a href>Cookie Policy</a>. You may receive SMS notification 
+    from us<br> and can opt out at any time
+</p>
+<div class="about">
+<input type="button" onclick="location.href='about.html';" value="About">
+</div>
+<div class="contact">
+<input type="button" onclick="location.href='contact.html';" value="Contact Us">
+</div>        
+<!-- <div class="about">
+    <input type="button" onclick="<a href="about.html">"</a> value="About">
+</div>
+<div class="contact">
+<a href="contact.html">Contact Us</a>
+</div> -->
+    </body>
+</html>

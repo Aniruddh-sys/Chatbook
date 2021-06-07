@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>ChatBook</title>
+        <style>
+            /* Internal CSS design for page. */
+            body{
+                margin: 0;
+                font-family: inherit;
+                background-color: rgb(21, 197, 168);
+                
+            }
+            /* Design header class. */
+            .header{
+                overflow: hidden;
+                background-color: rgb(184, 243, 184);
+                padding: 10px 10px;
+            
+            }
+           /* Design form in header class. */
+            .header form{
+                float: right;
+                padding-top: 0%;
+                padding-right: 3%;
+                margin-top: -50px;
+                
+            }
+            /* Design input type email. */
+            input[type=email]{
+                background-color: rgb(184, 173, 173);
+                border-color: rgb(247, 242, 242);
+                padding: 8px 15px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                font-size: 10px;
+                
+            }
+            /* Design input type password. */
+            input[type=password]{
+                background-color: rgb(184, 173, 173);
+                border-color: rgb(187, 179, 179);
+                padding: 8px 15px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                font-size: 10px;
+            }
+            /* Design input type submit button. */
+            input[type=submit]{
+                background-color: #f1f1f1; 
+                border-radius: 5px;
+                padding: 8px 15px;
+                background-color:rgb(226, 128, 128);
+                color: white;
+                font-size: 10px;
+
+            }
+            /* Managizing and allign the link. */
+            a{
+                float: right;
+                padding-right: 16%;
+                margin-top: 0%;
+            }
+            /* Design background image using bgimage class. */
+            .bgimage{
+                padding-top: 2%;
+                padding-left: 8%;
+            }
+            /* Design heading. */
+            h2{
+                color: rgb(94, 63, 63);
+                padding-left: 8%;
+                padding-top: 3% ;
+                font-size: 160%;
+            }
+            /* Design button and text with the help of making a class. */
+            .change{
+                float: right;
+                margin-top: -20%;
+                margin-right: 5%;
+
+            }
+            /* Coloring the heading tag. */
+            h1{
+                color: rgb(94, 63, 63);
+            }
+            /* Design input type button. */
+            input[type=button]{
+                width: 60%;
+                background-color: red;
+                color: white;
+                padding: 18px 20px;
+                border: 1px solid;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <!-- Start body implemantation. -->
+        
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" height="10%" width="30%">
+            </div>
+        <!-- Start form attribute. And add using input type email, password and a submit button. -->
+            <form>
+            <label>Emale or Phone</label>
+            <input type="email" id="email" name="email" required>
+            <label>Password</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Log In"><br>
+            <a href>Forgotten account...?</a>
+            </form>
+        <!-- Closing form attribute. -->
+        </div>
+        <!-- Inserting some text, images and any other data  and buttons using some common html tags.  -->
+            <div class="text">
+                <h2><b>ChatBook helps you connect and share<br> with the people in your life.<b></h2>
+            </div>
+            <div class="bgimage">
+                <img src="chatbook.png" height="40%" width="40%">
+            </div>
+            <div class="change">
+                <h1><i>Connect with peoples everywhere,<br>with a single click.</i></h1>
+                <input type="button" onclick="location.href='Signin.html';" value="Connect with new account">
+            </div>
+
+        
+    </body>
+   </html>
